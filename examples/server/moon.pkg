@@ -1,0 +1,9 @@
+import {
+  "cogna-dev/mcp-sdk/mcp/server" @mcp_server,
+  "cogna-dev/mcp-sdk/mcp/types" @mcp_types,
+  "moonbitlang/async",
+}
+
+options(
+  "is-main": true,
+)

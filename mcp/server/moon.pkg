@@ -1,0 +1,12 @@
+import {
+  "cogna-dev/mcp-sdk/mcp/types",
+  "moonbitlang/async",
+  "moonbitlang/async/http",
+  "moonbitlang/async/io",
+  "moonbitlang/async/socket",
+  "moonbitlang/core/json",
+}
+
+options(
+  "is-main": false,
+)
