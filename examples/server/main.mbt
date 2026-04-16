@@ -196,7 +196,9 @@ fn register_tools(server : @mcp_server.McpServer) -> Unit {
         Json::String(s) => s
         _ => "0"
       }
-      @mcp_types.ToolResult::ok([@mcp_types.ContentBlock::Text({ text: token_str })])
+      @mcp_types.ToolResult::ok([
+        @mcp_types.ContentBlock::Text({ text: token_str }),
+      ])
     }),
   )
 
@@ -311,7 +313,9 @@ fn register_tools(server : @mcp_server.McpServer) -> Unit {
         _ => "No response"
       }
       @mcp_types.ToolResult::ok([
-        @mcp_types.ContentBlock::Text({ text: "LLM response: \{model_response}" }),
+        @mcp_types.ContentBlock::Text({
+          text: "LLM response: \{model_response}",
+        }),
       ])
     }),
   )
@@ -846,7 +850,9 @@ fn register_prompts(server : @mcp_server.McpServer) -> Unit {
 ///|
 async fn main {
   let port = 3000
-  let server = @mcp_server.McpServer::new("mcp-conformance-test-server", "1.0.0")
+  let server = @mcp_server.McpServer::new(
+    "mcp-conformance-test-server", "1.0.0",
+  )
   register_tools(server)
   register_resources(server)
   register_prompts(server)
