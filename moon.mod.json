@@ -2,6 +2,17 @@
   "name": "cogna-dev/mcp-sdk",
   "version": "0.1.0",
   "preferred-target": "native",
+  "readme": "README.md",
+  "repository": "https://github.com/cogna-dev/mcp-sdk",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "moonbit",
+    "model-context-protocol",
+    "sdk",
+    "server"
+  ],
+  "description": "MoonBit implementation of the Model Context Protocol (MCP)",
   "deps": {
     "moonbitlang/async": "0.18.0"
   }
